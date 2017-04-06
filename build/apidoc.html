@@ -1,0 +1,863 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/mattdesl/eases"
+
+    >eases (v1.0.8)</a>
+</h1>
+<h4>grab bag of easing equations</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eases">module eases</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.backIn">
+            function <span class="apidocSignatureSpan">eases.</span>backIn
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.backInOut">
+            function <span class="apidocSignatureSpan">eases.</span>backInOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.backOut">
+            function <span class="apidocSignatureSpan">eases.</span>backOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.bounceIn">
+            function <span class="apidocSignatureSpan">eases.</span>bounceIn
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.bounceInOut">
+            function <span class="apidocSignatureSpan">eases.</span>bounceInOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.bounceOut">
+            function <span class="apidocSignatureSpan">eases.</span>bounceOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.circIn">
+            function <span class="apidocSignatureSpan">eases.</span>circIn
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.circInOut">
+            function <span class="apidocSignatureSpan">eases.</span>circInOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.circOut">
+            function <span class="apidocSignatureSpan">eases.</span>circOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.cubicIn">
+            function <span class="apidocSignatureSpan">eases.</span>cubicIn
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.cubicInOut">
+            function <span class="apidocSignatureSpan">eases.</span>cubicInOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.cubicOut">
+            function <span class="apidocSignatureSpan">eases.</span>cubicOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.elasticIn">
+            function <span class="apidocSignatureSpan">eases.</span>elasticIn
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.elasticInOut">
+            function <span class="apidocSignatureSpan">eases.</span>elasticInOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.elasticOut">
+            function <span class="apidocSignatureSpan">eases.</span>elasticOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.expoIn">
+            function <span class="apidocSignatureSpan">eases.</span>expoIn
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.expoInOut">
+            function <span class="apidocSignatureSpan">eases.</span>expoInOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.expoOut">
+            function <span class="apidocSignatureSpan">eases.</span>expoOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.linear">
+            function <span class="apidocSignatureSpan">eases.</span>linear
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.quadIn">
+            function <span class="apidocSignatureSpan">eases.</span>quadIn
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.quadInOut">
+            function <span class="apidocSignatureSpan">eases.</span>quadInOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.quadOut">
+            function <span class="apidocSignatureSpan">eases.</span>quadOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.quartIn">
+            function <span class="apidocSignatureSpan">eases.</span>quartIn
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.quartInOut">
+            function <span class="apidocSignatureSpan">eases.</span>quartInOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.quartOut">
+            function <span class="apidocSignatureSpan">eases.</span>quartOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.quintIn">
+            function <span class="apidocSignatureSpan">eases.</span>quintIn
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.quintInOut">
+            function <span class="apidocSignatureSpan">eases.</span>quintInOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.quintOut">
+            function <span class="apidocSignatureSpan">eases.</span>quintOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.sineIn">
+            function <span class="apidocSignatureSpan">eases.</span>sineIn
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.sineInOut">
+            function <span class="apidocSignatureSpan">eases.</span>sineInOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eases.sineOut">
+            function <span class="apidocSignatureSpan">eases.</span>sineOut
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eases" id="apidoc.module.eases">module eases</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eases.backIn" id="apidoc.element.eases.backIn">
+        function <span class="apidocSignatureSpan">eases.</span>backIn
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function backIn(t) {
+  var s = 1.70158
+  return t * t * ((s + 1) * t - s)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.backInOut" id="apidoc.element.eases.backInOut">
+        function <span class="apidocSignatureSpan">eases.</span>backInOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function backInOut(t) {
+  var s = 1.70158 * 1.525
+  if ((t *= 2) &#x3c; 1)
+    return 0.5 * (t * t * ((s + 1) * t - s))
+  return 0.5 * ((t -= 2) * t * ((s + 1) * t + s) + 2)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.backOut" id="apidoc.element.eases.backOut">
+        function <span class="apidocSignatureSpan">eases.</span>backOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function backOut(t) {
+  var s = 1.70158
+  return --t * t * ((s + 1) * t + s) + 1
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.bounceIn" id="apidoc.element.eases.bounceIn">
+        function <span class="apidocSignatureSpan">eases.</span>bounceIn
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function bounceIn(t) {
+  return 1.0 - bounceOut(1.0 - t)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.bounceInOut" id="apidoc.element.eases.bounceInOut">
+        function <span class="apidocSignatureSpan">eases.</span>bounceInOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function bounceInOut(t) {
+  return t &#x3c; 0.5
+    ? 0.5 * (1.0 - bounceOut(1.0 - t * 2.0))
+    : 0.5 * bounceOut(t * 2.0 - 1.0) + 0.5
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.bounceOut" id="apidoc.element.eases.bounceOut">
+        function <span class="apidocSignatureSpan">eases.</span>bounceOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function bounceOut(t) {
+  var a = 4.0 / 11.0
+  var b = 8.0 / 11.0
+  var c = 9.0 / 10.0
+
+  var ca = 4356.0 / 361.0
+  var cb = 35442.0 / 1805.0
+  var cc = 16061.0 / 1805.0
+
+  var t2 = t * t
+
+  return t &#x3c; a
+    ? 7.5625 * t2
+    : t &#x3c; b
+      ? 9.075 * t2 - 9.9 * t + 3.4
+      : t &#x3c; c
+        ? ca * t2 - cb * t + cc
+        : 10.8 * t * t - 20.52 * t + 10.72
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.circIn" id="apidoc.element.eases.circIn">
+        function <span class="apidocSignatureSpan">eases.</span>circIn
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function circIn(t) {
+  return 1.0 - Math.sqrt(1.0 - t * t)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.circInOut" id="apidoc.element.eases.circInOut">
+        function <span class="apidocSignatureSpan">eases.</span>circInOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function circInOut(t) {
+  if ((t *= 2) &#x3c; 1) return -0.5 * (Math.sqrt(1 - t * t) - 1)
+  return 0.5 * (Math.sqrt(1 - (t -= 2) * t) + 1)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.circOut" id="apidoc.element.eases.circOut">
+        function <span class="apidocSignatureSpan">eases.</span>circOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function circOut(t) {
+  return Math.sqrt(1 - ( --t * t ))
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.cubicIn" id="apidoc.element.eases.cubicIn">
+        function <span class="apidocSignatureSpan">eases.</span>cubicIn
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cubicIn(t) {
+  return t * t * t
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.cubicInOut" id="apidoc.element.eases.cubicInOut">
+        function <span class="apidocSignatureSpan">eases.</span>cubicInOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cubicInOut(t) {
+  return t &#x3c; 0.5
+    ? 4.0 * t * t * t
+    : 0.5 * Math.pow(2.0 * t - 2.0, 3.0) + 1.0
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.cubicOut" id="apidoc.element.eases.cubicOut">
+        function <span class="apidocSignatureSpan">eases.</span>cubicOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cubicOut(t) {
+  var f = t - 1.0
+  return f * f * f + 1.0
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.elasticIn" id="apidoc.element.eases.elasticIn">
+        function <span class="apidocSignatureSpan">eases.</span>elasticIn
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function elasticIn(t) {
+  return Math.sin(13.0 * t * Math.PI/2) * Math.pow(2.0, 10.0 * (t - 1.0))
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.elasticInOut" id="apidoc.element.eases.elasticInOut">
+        function <span class="apidocSignatureSpan">eases.</span>elasticInOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function elasticInOut(t) {
+  return t &#x3c; 0.5
+    ? 0.5 * Math.sin(+13.0 * Math.PI/2 * 2.0 * t) * Math.pow(2.0, 10.0 * (2.0 * t - 1.0))
+    : 0.5 * Math.sin(-13.0 * Math.PI/2 * ((2.0 * t - 1.0) + 1.0)) * Math.pow(2.0, -10.0 * (2.0 * t - 1.0)) + 1.0
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.elasticOut" id="apidoc.element.eases.elasticOut">
+        function <span class="apidocSignatureSpan">eases.</span>elasticOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function elasticOut(t) {
+  return Math.sin(-13.0 * (t + 1.0) * Math.PI/2) * Math.pow(2.0, -10.0 * t) + 1.0
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.expoIn" id="apidoc.element.eases.expoIn">
+        function <span class="apidocSignatureSpan">eases.</span>expoIn
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function expoIn(t) {
+  return t === 0.0 ? t : Math.pow(2.0, 10.0 * (t - 1.0))
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.expoInOut" id="apidoc.element.eases.expoInOut">
+        function <span class="apidocSignatureSpan">eases.</span>expoInOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function expoInOut(t) {
+  return (t === 0.0 || t === 1.0)
+    ? t
+    : t &#x3c; 0.5
+      ? +0.5 * Math.pow(2.0, (20.0 * t) - 10.0)
+      : -0.5 * Math.pow(2.0, 10.0 - (t * 20.0)) + 1.0
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.expoOut" id="apidoc.element.eases.expoOut">
+        function <span class="apidocSignatureSpan">eases.</span>expoOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function expoOut(t) {
+  return t === 1.0 ? t : 1.0 - Math.pow(2.0, -10.0 * t)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.linear" id="apidoc.element.eases.linear">
+        function <span class="apidocSignatureSpan">eases.</span>linear
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function linear(t) {
+  return t
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.quadIn" id="apidoc.element.eases.quadIn">
+        function <span class="apidocSignatureSpan">eases.</span>quadIn
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function quadIn(t) {
+  return t * t
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.quadInOut" id="apidoc.element.eases.quadInOut">
+        function <span class="apidocSignatureSpan">eases.</span>quadInOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function quadInOut(t) {
+    t /= 0.5
+    if (t &#x3c; 1) return 0.5*t*t
+    t--
+    return -0.5 * (t*(t-2) - 1)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.quadOut" id="apidoc.element.eases.quadOut">
+        function <span class="apidocSignatureSpan">eases.</span>quadOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function quadOut(t) {
+  return -t * (t - 2.0)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.quartIn" id="apidoc.element.eases.quartIn">
+        function <span class="apidocSignatureSpan">eases.</span>quartIn
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function quarticIn(t) {
+  return Math.pow(t, 4.0)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.quartInOut" id="apidoc.element.eases.quartInOut">
+        function <span class="apidocSignatureSpan">eases.</span>quartInOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function quarticInOut(t) {
+  return t &#x3c; 0.5
+    ? +8.0 * Math.pow(t, 4.0)
+    : -8.0 * Math.pow(t - 1.0, 4.0) + 1.0
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.quartOut" id="apidoc.element.eases.quartOut">
+        function <span class="apidocSignatureSpan">eases.</span>quartOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function quarticOut(t) {
+  return Math.pow(t - 1.0, 3.0) * (1.0 - t) + 1.0
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.quintIn" id="apidoc.element.eases.quintIn">
+        function <span class="apidocSignatureSpan">eases.</span>quintIn
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function qinticIn(t) {
+  return t * t * t * t * t
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.quintInOut" id="apidoc.element.eases.quintInOut">
+        function <span class="apidocSignatureSpan">eases.</span>quintInOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function qinticInOut(t) {
+    if ( ( t *= 2 ) &#x3c; 1 ) return 0.5 * t * t * t * t * t
+    return 0.5 * ( ( t -= 2 ) * t * t * t * t + 2 )
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.quintOut" id="apidoc.element.eases.quintOut">
+        function <span class="apidocSignatureSpan">eases.</span>quintOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function qinticOut(t) {
+  return --t * t * t * t * t + 1
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.sineIn" id="apidoc.element.eases.sineIn">
+        function <span class="apidocSignatureSpan">eases.</span>sineIn
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sineIn(t) {
+  var v = Math.cos(t * Math.PI * 0.5)
+  if (Math.abs(v) &#x3c; 1e-14) return 1
+  else return 1 - v
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.sineInOut" id="apidoc.element.eases.sineInOut">
+        function <span class="apidocSignatureSpan">eases.</span>sineInOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sineInOut(t) {
+  return -0.5 * (Math.cos(Math.PI*t) - 1)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.eases.sineOut" id="apidoc.element.eases.sineOut">
+        function <span class="apidocSignatureSpan">eases.</span>sineOut
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sineOut(t) {
+  return Math.sin(t * Math.PI/2)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
